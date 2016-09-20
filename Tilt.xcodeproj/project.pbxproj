@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C02B95E1D35E66C0003CEA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C02B95D1D35E66C0003CEA0 /* AppDelegate.swift */; };
+		1C02B9671D35E66C0003CEA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C02B9651D35E66C0003CEA0 /* Main.storyboard */; };
+		1C02B9691D35E66C0003CEA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C02B9681D35E66C0003CEA0 /* Assets.xcassets */; };
+		1C02B96C1D35E66C0003CEA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C02B96A1D35E66C0003CEA0 /* LaunchScreen.storyboard */; };
+		1C02B9771D35E66C0003CEA0 /* TiltTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C02B9761D35E66C0003CEA0 /* TiltTests.swift */; };
+		1C02B9821D35E66C0003CEA0 /* TiltUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C02B9811D35E66C0003CEA0 /* TiltUITests.swift */; };
+		1C02B9951D35E7060003CEA0 /* ball.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1C02B98F1D35E7060003CEA0 /* ball.sks */; };
+		1C02B9961D35E7060003CEA0 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1C02B9901D35E7060003CEA0 /* GameScene.sks */; };
+		1C02B9971D35E7060003CEA0 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C02B9911D35E7060003CEA0 /* GameScene.swift */; };
+		1C02B9981D35E7060003CEA0 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C02B9921D35E7060003CEA0 /* GameViewController.swift */; };
+		1C02B9991D35E7060003CEA0 /* MainMenu.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1C02B9931D35E7060003CEA0 /* MainMenu.sks */; };
+		1C02B99A1D35E7060003CEA0 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C02B9941D35E7060003CEA0 /* MainMenu.swift */; };
+		1C16D8351D8F7DA90013C250 /* background.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1C16D8341D8F7DA90013C250 /* background.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1C02B9731D35E66C0003CEA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C02B9521D35E66C0003CEA0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C02B9591D35E66C0003CEA0;
+			remoteInfo = Tilt;
+		};
+		1C02B97E1D35E66C0003CEA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C02B9521D35E66C0003CEA0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C02B9591D35E66C0003CEA0;
+			remoteInfo = Tilt;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1C02B95A1D35E66C0003CEA0 /* Tilt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tilt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C02B95D1D35E66C0003CEA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1C02B9661D35E66C0003CEA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1C02B9681D35E66C0003CEA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1C02B96B1D35E66C0003CEA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1C02B96D1D35E66C0003CEA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C02B9721D35E66C0003CEA0 /* TiltTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TiltTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C02B9761D35E66C0003CEA0 /* TiltTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiltTests.swift; sourceTree = "<group>"; };
+		1C02B9781D35E66C0003CEA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C02B97D1D35E66C0003CEA0 /* TiltUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TiltUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C02B9811D35E66C0003CEA0 /* TiltUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiltUITests.swift; sourceTree = "<group>"; };
+		1C02B9831D35E66C0003CEA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C02B98F1D35E7060003CEA0 /* ball.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ball.sks; sourceTree = "<group>"; };
+		1C02B9901D35E7060003CEA0 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		1C02B9911D35E7060003CEA0 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		1C02B9921D35E7060003CEA0 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		1C02B9931D35E7060003CEA0 /* MainMenu.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MainMenu.sks; sourceTree = "<group>"; };
+		1C02B9941D35E7060003CEA0 /* MainMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
+		1C16D8341D8F7DA90013C250 /* background.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = background.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1C02B9571D35E66C0003CEA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C02B96F1D35E66C0003CEA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C02B97A1D35E66C0003CEA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C02B9511D35E66C0003CEA0 = {
+			isa = PBXGroup;
+			children = (
+				1C02B95C1D35E66C0003CEA0 /* Tilt */,
+				1C02B9751D35E66C0003CEA0 /* TiltTests */,
+				1C02B9801D35E66C0003CEA0 /* TiltUITests */,
+				1C02B95B1D35E66C0003CEA0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1C02B95B1D35E66C0003CEA0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1C02B95A1D35E66C0003CEA0 /* Tilt.app */,
+				1C02B9721D35E66C0003CEA0 /* TiltTests.xctest */,
+				1C02B97D1D35E66C0003CEA0 /* TiltUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1C02B95C1D35E66C0003CEA0 /* Tilt */ = {
+			isa = PBXGroup;
+			children = (
+				1C02B95D1D35E66C0003CEA0 /* AppDelegate.swift */,
+				1C02B9921D35E7060003CEA0 /* GameViewController.swift */,
+				1C02B9651D35E66C0003CEA0 /* Main.storyboard */,
+				1C02B98F1D35E7060003CEA0 /* ball.sks */,
+				1C02B9911D35E7060003CEA0 /* GameScene.swift */,
+				1C02B9901D35E7060003CEA0 /* GameScene.sks */,
+				1C02B9941D35E7060003CEA0 /* MainMenu.swift */,
+				1C02B9931D35E7060003CEA0 /* MainMenu.sks */,
+				1C02B9681D35E66C0003CEA0 /* Assets.xcassets */,
+				1C02B96A1D35E66C0003CEA0 /* LaunchScreen.storyboard */,
+				1C02B96D1D35E66C0003CEA0 /* Info.plist */,
+				1C16D8341D8F7DA90013C250 /* background.mp3 */,
+			);
+			path = Tilt;
+			sourceTree = "<group>";
+		};
+		1C02B9751D35E66C0003CEA0 /* TiltTests */ = {
+			isa = PBXGroup;
+			children = (
+				1C02B9761D35E66C0003CEA0 /* TiltTests.swift */,
+				1C02B9781D35E66C0003CEA0 /* Info.plist */,
+			);
+			path = TiltTests;
+			sourceTree = "<group>";
+		};
+		1C02B9801D35E66C0003CEA0 /* TiltUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1C02B9811D35E66C0003CEA0 /* TiltUITests.swift */,
+				1C02B9831D35E66C0003CEA0 /* Info.plist */,
+			);
+			path = TiltUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1C02B9591D35E66C0003CEA0 /* Tilt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C02B9861D35E66C0003CEA0 /* Build configuration list for PBXNativeTarget "Tilt" */;
+			buildPhases = (
+				1C02B9561D35E66C0003CEA0 /* Sources */,
+				1C02B9571D35E66C0003CEA0 /* Frameworks */,
+				1C02B9581D35E66C0003CEA0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tilt;
+			productName = Tilt;
+			productReference = 1C02B95A1D35E66C0003CEA0 /* Tilt.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1C02B9711D35E66C0003CEA0 /* TiltTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C02B9891D35E66C0003CEA0 /* Build configuration list for PBXNativeTarget "TiltTests" */;
+			buildPhases = (
+				1C02B96E1D35E66C0003CEA0 /* Sources */,
+				1C02B96F1D35E66C0003CEA0 /* Frameworks */,
+				1C02B9701D35E66C0003CEA0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1C02B9741D35E66C0003CEA0 /* PBXTargetDependency */,
+			);
+			name = TiltTests;
+			productName = TiltTests;
+			productReference = 1C02B9721D35E66C0003CEA0 /* TiltTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1C02B97C1D35E66C0003CEA0 /* TiltUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C02B98C1D35E66C0003CEA0 /* Build configuration list for PBXNativeTarget "TiltUITests" */;
+			buildPhases = (
+				1C02B9791D35E66C0003CEA0 /* Sources */,
+				1C02B97A1D35E66C0003CEA0 /* Frameworks */,
+				1C02B97B1D35E66C0003CEA0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1C02B97F1D35E66C0003CEA0 /* PBXTargetDependency */,
+			);
+			name = TiltUITests;
+			productName = TiltUITests;
+			productReference = 1C02B97D1D35E66C0003CEA0 /* TiltUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1C02B9521D35E66C0003CEA0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Mar.Co;
+				TargetAttributes = {
+					1C02B9591D35E66C0003CEA0 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 4DY8U6NQ76;
+						LastSwiftMigration = 0800;
+					};
+					1C02B9711D35E66C0003CEA0 = {
+						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
+						TestTargetID = 1C02B9591D35E66C0003CEA0;
+					};
+					1C02B97C1D35E66C0003CEA0 = {
+						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
+						TestTargetID = 1C02B9591D35E66C0003CEA0;
+					};
+				};
+			};
+			buildConfigurationList = 1C02B9551D35E66C0003CEA0 /* Build configuration list for PBXProject "Tilt" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1C02B9511D35E66C0003CEA0;
+			productRefGroup = 1C02B95B1D35E66C0003CEA0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1C02B9591D35E66C0003CEA0 /* Tilt */,
+				1C02B9711D35E66C0003CEA0 /* TiltTests */,
+				1C02B97C1D35E66C0003CEA0 /* TiltUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1C02B9581D35E66C0003CEA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C02B96C1D35E66C0003CEA0 /* LaunchScreen.storyboard in Resources */,
+				1C02B9991D35E7060003CEA0 /* MainMenu.sks in Resources */,
+				1C02B9961D35E7060003CEA0 /* GameScene.sks in Resources */,
+				1C02B9691D35E66C0003CEA0 /* Assets.xcassets in Resources */,
+				1C02B9951D35E7060003CEA0 /* ball.sks in Resources */,
+				1C16D8351D8F7DA90013C250 /* background.mp3 in Resources */,
+				1C02B9671D35E66C0003CEA0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C02B9701D35E66C0003CEA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C02B97B1D35E66C0003CEA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1C02B9561D35E66C0003CEA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C02B9971D35E7060003CEA0 /* GameScene.swift in Sources */,
+				1C02B9981D35E7060003CEA0 /* GameViewController.swift in Sources */,
+				1C02B95E1D35E66C0003CEA0 /* AppDelegate.swift in Sources */,
+				1C02B99A1D35E7060003CEA0 /* MainMenu.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C02B96E1D35E66C0003CEA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C02B9771D35E66C0003CEA0 /* TiltTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C02B9791D35E66C0003CEA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C02B9821D35E66C0003CEA0 /* TiltUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1C02B9741D35E66C0003CEA0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1C02B9591D35E66C0003CEA0 /* Tilt */;
+			targetProxy = 1C02B9731D35E66C0003CEA0 /* PBXContainerItemProxy */;
+		};
+		1C02B97F1D35E66C0003CEA0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1C02B9591D35E66C0003CEA0 /* Tilt */;
+			targetProxy = 1C02B97E1D35E66C0003CEA0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1C02B9651D35E66C0003CEA0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1C02B9661D35E66C0003CEA0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1C02B96A1D35E66C0003CEA0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1C02B96B1D35E66C0003CEA0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1C02B9841D35E66C0003CEA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1C02B9851D35E66C0003CEA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1C02B9871D35E66C0003CEA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Tilt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.marcopizarro.Tilt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1C02B9881D35E66C0003CEA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Tilt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.marcopizarro.Tilt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		1C02B98A1D35E66C0003CEA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = TiltTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.marcopizarro.TiltTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tilt.app/Tilt";
+			};
+			name = Debug;
+		};
+		1C02B98B1D35E66C0003CEA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TiltTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.marcopizarro.TiltTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tilt.app/Tilt";
+			};
+			name = Release;
+		};
+		1C02B98D1D35E66C0003CEA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = TiltUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.marcopizarro.TiltUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Tilt;
+			};
+			name = Debug;
+		};
+		1C02B98E1D35E66C0003CEA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TiltUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.marcopizarro.TiltUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Tilt;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1C02B9551D35E66C0003CEA0 /* Build configuration list for PBXProject "Tilt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C02B9841D35E66C0003CEA0 /* Debug */,
+				1C02B9851D35E66C0003CEA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C02B9861D35E66C0003CEA0 /* Build configuration list for PBXNativeTarget "Tilt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C02B9871D35E66C0003CEA0 /* Debug */,
+				1C02B9881D35E66C0003CEA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C02B9891D35E66C0003CEA0 /* Build configuration list for PBXNativeTarget "TiltTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C02B98A1D35E66C0003CEA0 /* Debug */,
+				1C02B98B1D35E66C0003CEA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C02B98C1D35E66C0003CEA0 /* Build configuration list for PBXNativeTarget "TiltUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C02B98D1D35E66C0003CEA0 /* Debug */,
+				1C02B98E1D35E66C0003CEA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1C02B9521D35E66C0003CEA0 /* Project object */;
+}
