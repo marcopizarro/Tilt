@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1C02B95E1D35E66C0003CEA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C02B95D1D35E66C0003CEA0 /* AppDelegate.swift */; };
 		1C02B9671D35E66C0003CEA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C02B9651D35E66C0003CEA0 /* Main.storyboard */; };
-		1C02B9691D35E66C0003CEA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C02B9681D35E66C0003CEA0 /* Assets.xcassets */; };
 		1C02B96C1D35E66C0003CEA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C02B96A1D35E66C0003CEA0 /* LaunchScreen.storyboard */; };
 		1C02B9771D35E66C0003CEA0 /* TiltTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C02B9761D35E66C0003CEA0 /* TiltTests.swift */; };
 		1C02B9821D35E66C0003CEA0 /* TiltUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C02B9811D35E66C0003CEA0 /* TiltUITests.swift */; };
@@ -20,6 +19,7 @@
 		1C02B9991D35E7060003CEA0 /* MainMenu.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1C02B9931D35E7060003CEA0 /* MainMenu.sks */; };
 		1C02B99A1D35E7060003CEA0 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C02B9941D35E7060003CEA0 /* MainMenu.swift */; };
 		1C16D8351D8F7DA90013C250 /* background.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1C16D8341D8F7DA90013C250 /* background.mp3 */; };
+		1CBE3B3E1DA8A13B0057B91E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C02B9681D35E66C0003CEA0 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -254,8 +254,8 @@
 				1C02B96C1D35E66C0003CEA0 /* LaunchScreen.storyboard in Resources */,
 				1C02B9991D35E7060003CEA0 /* MainMenu.sks in Resources */,
 				1C02B9961D35E7060003CEA0 /* GameScene.sks in Resources */,
-				1C02B9691D35E66C0003CEA0 /* Assets.xcassets in Resources */,
 				1C02B9951D35E7060003CEA0 /* ball.sks in Resources */,
+				1CBE3B3E1DA8A13B0057B91E /* Assets.xcassets in Resources */,
 				1C16D8351D8F7DA90013C250 /* background.mp3 in Resources */,
 				1C02B9671D35E66C0003CEA0 /* Main.storyboard in Resources */,
 			);

@@ -28,6 +28,19 @@ var counter = 0
 // for music playing
 var playing = false
 
+var audioPlayer: AVAudioPlayer?
+
+func playBackgroundMusic() {
+    let aSound = NSURL(fileURLWithPath: Bundle.main.path(forResource: "background", ofType: "mp3")!)
+    do {
+        audioPlayer = try AVAudioPlayer(contentsOf:aSound as URL)
+        audioPlayer!.numberOfLoops = -1
+        audioPlayer!.prepareToPlay()
+        audioPlayer!.play()
+    } catch {
+        print("Cannot play the file")
+    }
+}
 
 class GameScene: SKScene, SKPhysicsContactDelegate {
     
@@ -38,19 +51,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     // test 002
     
     
-    var audioPlayer: AVAudioPlayer?
+
     
-    func playBackgroundMusic() {
-        let aSound = NSURL(fileURLWithPath: Bundle.main.path(forResource: "background", ofType: "mp3")!)
-        do {
-            audioPlayer = try AVAudioPlayer(contentsOf:aSound as URL)
-            audioPlayer!.numberOfLoops = -1
-            audioPlayer!.prepareToPlay()
-            audioPlayer!.play()
-        } catch {
-            print("Cannot play the file")
-        }
-    }
+
     
     
     
