@@ -10,6 +10,7 @@ import SpriteKit
 import CoreMotion
 import AVFoundation
 
+// Universal Variables
 let red :UInt32 = 0x1 << 0 // 1
 let blue :UInt32 = 0x1 << 1 // 2
 let green :UInt32 = 0x1 << 2 // 4
@@ -29,6 +30,8 @@ var counter = 0
 var playing = false
 
 var audioPlayer: AVAudioPlayer?
+
+
 
 func playBackgroundMusic() {
     let aSound = NSURL(fileURLWithPath: Bundle.main.path(forResource: "background", ofType: "mp3")!)
