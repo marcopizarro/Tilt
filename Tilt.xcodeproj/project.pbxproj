@@ -19,6 +19,8 @@
 		1C02B9991D35E7060003CEA0 /* MainMenu.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1C02B9931D35E7060003CEA0 /* MainMenu.sks */; };
 		1C02B99A1D35E7060003CEA0 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C02B9941D35E7060003CEA0 /* MainMenu.swift */; };
 		1C16D8351D8F7DA90013C250 /* background.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1C16D8341D8F7DA90013C250 /* background.mp3 */; };
+		1C6D6F941EE1FE850050FD49 /* wrong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1C6D6F921EE1FE850050FD49 /* wrong.mp3 */; };
+		1C6D6F951EE1FE850050FD49 /* correct.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1C6D6F931EE1FE850050FD49 /* correct.mp3 */; };
 		1CBE3B3E1DA8A13B0057B91E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C02B9681D35E66C0003CEA0 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +61,8 @@
 		1C02B9931D35E7060003CEA0 /* MainMenu.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MainMenu.sks; sourceTree = "<group>"; };
 		1C02B9941D35E7060003CEA0 /* MainMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 		1C16D8341D8F7DA90013C250 /* background.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = background.mp3; sourceTree = "<group>"; };
+		1C6D6F921EE1FE850050FD49 /* wrong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = wrong.mp3; path = ../wrong.mp3; sourceTree = "<group>"; };
+		1C6D6F931EE1FE850050FD49 /* correct.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = correct.mp3; path = ../correct.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +125,8 @@
 				1C02B96A1D35E66C0003CEA0 /* LaunchScreen.storyboard */,
 				1C02B96D1D35E66C0003CEA0 /* Info.plist */,
 				1C16D8341D8F7DA90013C250 /* background.mp3 */,
+				1C6D6F931EE1FE850050FD49 /* correct.mp3 */,
+				1C6D6F921EE1FE850050FD49 /* wrong.mp3 */,
 			);
 			path = Tilt;
 			sourceTree = "<group>";
@@ -253,8 +259,10 @@
 			files = (
 				1C02B96C1D35E66C0003CEA0 /* LaunchScreen.storyboard in Resources */,
 				1C02B9991D35E7060003CEA0 /* MainMenu.sks in Resources */,
+				1C6D6F951EE1FE850050FD49 /* correct.mp3 in Resources */,
 				1C02B9961D35E7060003CEA0 /* GameScene.sks in Resources */,
 				1C02B9951D35E7060003CEA0 /* ball.sks in Resources */,
+				1C6D6F941EE1FE850050FD49 /* wrong.mp3 in Resources */,
 				1CBE3B3E1DA8A13B0057B91E /* Assets.xcassets in Resources */,
 				1C16D8351D8F7DA90013C250 /* background.mp3 in Resources */,
 				1C02B9671D35E66C0003CEA0 /* Main.storyboard in Resources */,
@@ -434,12 +442,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4DY8U6NQ76;
 				INFOPLIST_FILE = Tilt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.marcopizarro.Tilt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -449,12 +459,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4DY8U6NQ76;
 				INFOPLIST_FILE = Tilt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.marcopizarro.Tilt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

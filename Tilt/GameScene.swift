@@ -21,15 +21,22 @@ let yellow :UInt32 = 0x1 << 3 // 8
     let greenEnd :UInt32 = 0x1 << 6// 64
     let yellowEnd :UInt = 0x1 << 7// 128
 
-var timer = Timer()
+//intit timer
 var timer2 = Timer()
+//amount wrong
 var wrong = 0;
+//for intervals
 var number = 5
 var counter = 0
+// to save when paused
+var numberSave = 0
+var counterSave = 0
 // for music playing
 var playing = false
 
 var audioPlayer: AVAudioPlayer?
+var audioPlayer1: AVAudioPlayer?
+var audioPlayer2: AVAudioPlayer?
 
 
 
@@ -45,28 +52,40 @@ func playBackgroundMusic() {
     }
 }
 
+func playWrongSound() {
+    let theSound = NSURL(fileURLWithPath: Bundle.main.path(forResource: "wrong", ofType: "mp3")!)
+    do {
+        audioPlayer1 = try AVAudioPlayer(contentsOf:theSound as URL)
+        audioPlayer1!.numberOfLoops = 0
+        audioPlayer1!.prepareToPlay()
+        audioPlayer1!.play()
+    } catch {
+        print("Cannot play the file")
+    }
+}
+
+func playCorrectSound() {
+    let anotherSound = NSURL(fileURLWithPath: Bundle.main.path(forResource: "correct", ofType: "mp3")!)
+    do {
+        audioPlayer2 = try AVAudioPlayer(contentsOf:anotherSound as URL)
+        audioPlayer2!.numberOfLoops = 0
+        audioPlayer2!.prepareToPlay()
+        audioPlayer2!.play()
+    } catch {
+        print("Cannot play the file")
+    }
+}
+
 class GameScene: SKScene, SKPhysicsContactDelegate {
     
     let manager = CMMotionManager()
     var playerRed = SKSpriteNode()
     var redEnd = SKSpriteNode()
     
-    // test 002
-    
-    
-
-    
-
-    
-    
-    
-    // end test 002
     
     override func didMove(to view: SKView) {
-        
-       
+        updateTimer()
 
-        
         timer2.invalidate()
         
         number = 5
@@ -81,11 +100,10 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         }
         
         manager.startAccelerometerUpdates()
-        manager.accelerometerUpdateInterval = 0.1
+        manager.accelerometerUpdateInterval = 0.05
+
 
         
-        // to make new ball
-        timer = Timer.scheduledTimer(timeInterval: 5, target: self, selector: (#selector(GameScene.updateTimer)), userInfo: nil, repeats: true)
         // for changing countdown label
         timer2 = Timer.scheduledTimer(timeInterval: 1, target: self, selector: (#selector(GameScene.updateLabel)), userInfo: nil, repeats: true)
         
@@ -94,7 +112,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     func updateLabel(){
         
-        
         number -= 1
         counter += 1
     
@@ -102,6 +119,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             label.text = String(number)
         }
         print(number)
+        
         if counter == 5{
         
             number = 5
@@ -110,11 +128,16 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 label.text = String(number)
             }
         }
+        if(counter % 5 == 0){
+            updateTimer();
+        }
+        
         
     }
+    
     func updateTimer(){
 
-        
+        print("updatingTimer")
         //random
         
         let random = Int(arc4random_uniform(4))
@@ -169,17 +192,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
  
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        timer.invalidate()
-        timer2.invalidate()
-        number = 5
-        counter = 0
-        manager.stopAccelerometerUpdates()
-        let game:GameScene = GameScene(fileNamed: "MainMenu")!
-        game.scaleMode = .aspectFill
-        let transition:SKTransition = SKTransition.crossFade(withDuration: 1.0)
-        self.view?.presentScene(game, transition: transition)
-    }
+
 
     
     func didBegin(_ contact: SKPhysicsContact) {
@@ -202,6 +215,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             //end test001
             score += 1
             print("you won!")
+            playCorrectSound()
             if let label = self.childNode(withName: "scoreLabel") as? SKLabelNode {
                 label.text = String(score)
             }
@@ -224,7 +238,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             wrong += 1
             //score -= 1
             print("you Lose!")
-            
+            playWrongSound()
             if let label = self.childNode(withName: "scoreLabel") as? SKLabelNode {
                 label.text = String(score)
             }
@@ -252,7 +266,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             //end test001
             score += 1
             print("you won!")
-            
+            playCorrectSound()
             if let label = self.childNode(withName: "scoreLabel") as? SKLabelNode {
                 label.text = String(score)
             }
@@ -274,6 +288,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             wrong += 1
             //score -= 1
             print("you Lose!")
+            playWrongSound()
             
             if let label = self.childNode(withName: "scoreLabel") as? SKLabelNode {
                 label.text = String(score)
@@ -302,7 +317,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             //end test001
             score += 1
             print("you won!")
-            
+            playCorrectSound()
             if let label = self.childNode(withName: "scoreLabel") as? SKLabelNode {
                 label.text = String(score)
             }
@@ -323,7 +338,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             wrong += 1
             //score -= 1
             print("you Lose!")
-            
+            playWrongSound()
             if let label = self.childNode(withName: "scoreLabel") as? SKLabelNode {
                 label.text = String(score)
             }
@@ -351,7 +366,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             //end test001
             score += 1
             print("you won!")
-            
+            playCorrectSound()
             if let label = self.childNode(withName: "scoreLabel") as? SKLabelNode {
                 label.text = String(score)
             }
@@ -372,7 +387,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             wrong += 1
             //score -= 1
             print("you Lose!")
-            
+            playWrongSound()
             if let label = self.childNode(withName: "scoreLabel") as? SKLabelNode {
                 label.text = String(score)
             }
@@ -384,13 +399,42 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 gameOver()
             }
         }
-
         
     }
     
+    //if touch screen
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if(self.scene?.isPaused == true){
+        print("unpause")
+        number = numberSave
+        counter = counterSave
+            
+            // for changing countdown label
+            timer2 = Timer.scheduledTimer(timeInterval: 1, target: self, selector: (#selector(GameScene.updateLabel)), userInfo: nil, repeats: true)
+            if let resume = self.childNode(withName: "resumeLabel") as? SKLabelNode {
+                resume.isHidden = true;
+            }
+        self.scene?.isPaused = false
+        return;
+        }
+        if(self.scene?.isPaused == false){
+            self.scene?.isPaused = true
+            print("pause")
+            numberSave = number;
+            counterSave = counter;
+            timer2.invalidate()
+            if let resume = self.childNode(withName: "resumeLabel") as? SKLabelNode {
+                resume.isHidden = false;
+            }
+            if(self.scene?.isPaused == true){
+                return;
+            }
+        }
+    }
+    
+
     
     func gameOver(){
-        timer.invalidate()
         timer2.invalidate()
         number = 5
         counter = 0
